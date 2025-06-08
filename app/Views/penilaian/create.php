@@ -23,9 +23,9 @@
                 <label class="form-label">Penilaian Kerja</label>
                 <select name="penilaian_kerja" class="form-control">
                     <option selected>Pilih Penilaian</option>
-                    <option value="1">Sangat Baik</option>
-                    <option value="2">Cukup</option>
-                    <option value="3">Buruk</option>
+                    <option value="sangat baik">Sangat Baik</option>
+                    <option value="cukup">Cukup</option>
+                    <option value="buruk">Buruk</option>
                 </select>
             </div>
             <div class="mb-3">

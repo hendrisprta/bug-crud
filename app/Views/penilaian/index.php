@@ -6,6 +6,9 @@
             <a href="/create-penilaian">
             <button type="button" class="btn btn-primary">Tambah Data</button>
             </a>
+            <a href="/exportword">
+            <button type="button" class="btn btn-info">Cetak Data</button>
+            </a>
             <hr>
             <?php if (session()->getFlashdata('succes')) : ?>
             <div class="alert alert-primary" role="alert">
@@ -33,9 +36,9 @@
                         <td><?= $value['no_pegawai'] ?></td>
                         <td><?= $value['nama'] ?></td>
                         <td>
-                            <?php if($value['penilaian_kerja'] == 1){
+                            <?php if($value['penilaian_kerja'] == "sangat baik"){
                                 echo '<span class="badge bg-success">Sangat Baik</span>';
-                            } else if ($value['penilaian_kerja'] == 2){
+                            } else if ($value['penilaian_kerja'] == "cukup"){
                                 echo '<span class="badge bg-info text-dark">Cukup</span>';
                             } else {
                                 echo '<span class="badge bg-danger">Buruk</span>';

@@ -64,6 +64,7 @@ $routes->get('/penilaian-edit/(:num)', 'Penilaian::edit/$1',['filter'=>'permissi
 $routes->post('/penilaian-edit/(:num)', 'Penilaian::update/$1',['filter'=>'permission:data-penilaian']);
 $routes->get('/penilaian-hapus/(:num)', 'Penilaian::delete/$1',['filter'=>'permission:data-pegawai']);
 
+$routes->get('/exportword','Penilaian::exportword');
 
 $routes->get('/users', 'Users::index',['filter'=>'permission:data-penilaian']);
 $routes->get('/create-users', 'Users::create',['filter'=>'permission:data-penilaian']);

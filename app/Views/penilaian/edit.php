@@ -24,9 +24,9 @@
                 <div class="col-sm--12">
                 <select name="penilaian_kerja" class="form-control">
                     <option value="<?= $result['penilaian_kerja']?>"> <?= $result['penilaian_kerja'] ?></option>
-                    <option value="1">Sangat Baik</option>
-                    <option value="2">Cukup</option>
-                    <option value="3">Buruk</option>
+                    <option value="sangat baik">Sangat Baik</option>
+                    <option value="cukup">Cukup</option>
+                    <option value="buruk">Buruk</option>
                 </select>
                 </div>
             </div>
