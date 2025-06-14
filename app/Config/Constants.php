@@ -15,6 +15,8 @@
  */
 
  //AGAR MEMBERIKAN URL DINAMIS OTOMATIS HTTP/HTTPS
+ 
+ //CODING DINAMIS AGAR BISA BASE URL
  defined('APP_NAMESPACE') || define('APP_NAMESPACE', 'App');
 
 $base = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://' .
